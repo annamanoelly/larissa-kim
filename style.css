@@ -3,3 +3,14 @@
     padding: 0;
     background: linear-gradient(to left, white, #FF1493);
 }
+
+.center{
+    text-align: center;
+    font-family: "Georgia", Times, serif;
+
+}
+
+img{
+    width: 20%;
+    border-radius: 8px;
+}
