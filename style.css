@@ -14,3 +14,56 @@ img{
     width: 20%;
     border-radius: 8px;
 }
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh; /* Isso faz com que o contêiner ocupe toda a altura da viewport */
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.40rem 1.8rem;
+    font-size: 1rem; /* Use rem para tamanho de fonte relativo */
+    font-weight: 700;
+    color: rgb(5, 5, 5);
+    border: 3px solid rgb(255,20,147);
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Tamanho pequeno */
+@media (max-width: 600px) {
+    .btn {
+        padding: 0.5rem 1.5rem; 
+        font-size: 0.500rem; 
+    }
+}
+
+/*Tamanho médio*/
+@media (min-width: 601px) and (max-width: 1024px) {
+    .btn {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.600rem; 
+    }
+}
+
+.btn:hover {
+    background-color: rgb(252, 20, 147);
+    transform: scale(1.1);
+    color: rgb(7, 7, 7);
+}
+
+
+
+
