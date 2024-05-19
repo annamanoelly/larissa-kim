@@ -1,6 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+}
+
+body{
     background: linear-gradient(to left, white, #FF1493);
 }
 
@@ -19,13 +22,13 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15vh; /* Isso faz com que o contêiner ocupe toda a altura da viewport */
+    height: 15vh; 
 }
 
 .btn {
     display: inline-block;
     padding: 0.40rem 1.8rem;
-    font-size: 1rem; /* Use rem para tamanho de fonte relativo */
+    font-size: 1rem; 
     font-weight: 700;
     color: rgb(5, 5, 5);
     border: 3px solid rgb(255,20,147);
@@ -64,6 +67,49 @@ img{
     color: rgb(7, 7, 7);
 }
 
+/* Posicionamento dos GIFs nos cantos */
+.corner-gif {
+    position: fixed;
+    max-width: 20%;
+    width: auto; 
+    height: auto;
+}
+
+.top-left {
+    top: 2%;
+    left: 2%; 
+}
+
+.top-right {
+    top: 2%; 
+    right: 2%; 
+}
+
+
+.text-container {
+    text-align: center;
+    margin-bottom: 10rem; 
+    font-weight: 400;
+
+}
+
+.below-button-text {
+    font-size: 16px; 
+    color: #000;
+}
+
+
+@media (max-width: 768px) {
+    .below-button-text {
+        font-size: 12px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .below-button-text {
+        font-size: 10px;
+    }
+}
 
 
 
